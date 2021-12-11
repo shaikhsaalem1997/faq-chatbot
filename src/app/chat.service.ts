@@ -22,8 +22,7 @@ export class ChatService {
   // umsg!: string;
   // readonly WDUrl = "https://eu-gb.functions.appdomain.cloud/api/v1/web/sohailkst10%40gmail.com_dev/default/Doctor_apt_v6.json";
   // readonly WDUrl = "https://eu-gb.functions.appdomain.cloud/api/v1/web/sohailkst10%40gmail.com_dev/default/Translator_both.json";
-  // readonly WDUrl = "http://127.0.0.1:8000/message";
-  readonly WDUrl = "http://35.160.213.71:8000/message/";
+  readonly WDUrl = "http://127.0.0.1:8000/message";
 
   conversation = new BehaviorSubject<Message[]>([]);
 
