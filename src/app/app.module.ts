@@ -4,31 +4,26 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { ChatEngComponent } from './chat-eng/chat-eng.component';
-import { ChatArbComponent } from './chat-arb/chat-arb.component';
-import { SpeechToTextComponent } from './speech-to-text/speech-to-text.component';
-
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 
 import { ChatService } from './chat.service';
 import { VoicerecognitionService } from './voicerecognition.service';
+import { ConfigComponent } from './config/config.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ChatEngComponent,
-    ChatArbComponent,
-    SpeechToTextComponent,
+    ConfigComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
   ],
-  providers: [ChatService, VoicerecognitionService],
+  providers: [ChatService, VoicerecognitionService, ConfigComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
