@@ -1,13 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { ChatEngComponent } from './chat-eng/chat-eng.component';
-import { ChatArbComponent } from './chat-arb/chat-arb.component';
+import { ConfigComponent } from './config/config.component';
 
 const routes: Routes = [
-  {path:'kernel',component:ChatEngComponent},
-  {path:'',component:ChatEngComponent},
-  {path:'neo',component:ChatArbComponent}
+  {path:'config', component:ConfigComponent},
 ];
 
 @NgModule({
